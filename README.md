@@ -145,6 +145,19 @@ Among all models tested, XGBoost delivered the strongest predictive performance,
 
 The findings suggest that alcohol concentration, volatile acidity, citric acid, and sulphates are among the most influential wine quality indicators.
 
+Repository Contents
+Executive Summary
+See: reports/Wine_Quality_Prediction_Executive_Summary.docx
+
+Notebook
+See: notebook/Wine_Quality_task_1_&_2.ipynb
+
+Visualisations
+See: images/
+
+Dataset Information
+See: data/
+
 **Author**
 
 Derek Ahamioje

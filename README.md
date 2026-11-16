@@ -1,170 +1,206 @@
-**Wine Quality Prediction**
+# Wine Quality Prediction
 
-**Project Overview**
+## Project Overview
 
 This project investigates the relationship between physicochemical properties and wine quality using statistical analysis and machine learning techniques.
 
 The objective was to identify the key factors influencing wine quality and evaluate the effectiveness of regression and classification models in predicting quality scores.
 
-The project analysed a dataset containing 1,599 red wine samples and 11 physicochemical characteristics including acidity, pH, alcohol content, sulphates, chlorides, and density.
+The project analysed a dataset containing 1,599 red wine samples and 11 physicochemical characteristics, including acidity, pH, alcohol content, sulphates, chlorides, and density.
 
-**Business Problem**
+---
+
+## Business Problem
 
 Wine producers need to understand how physicochemical characteristics influence quality in order to improve production processes and product consistency.
 
 This project explores whether machine learning models can accurately predict wine quality and identify the most influential quality-driving factors.
 
-**Dataset**
+---
 
-Source: Kaggle Wine Quality Dataset
+## Dataset
 
-**Dataset Characteristics:**
+### Source
+Kaggle Wine Quality Dataset
 
-1,599 wine samples
-11 physicochemical attributes
-1 quality variable
+### Dataset Characteristics
 
-**Features include:**
+- 1,599 wine samples
+- 11 physicochemical attributes
+- 1 quality variable
 
-Fixed acidity
-Volatile acidity
-Citric acid
-Residual sugar
-Chlorides
-Free sulphur dioxide
-Total sulphur dioxide
-Density
-pH
-Sulphates
-Alcohol
-Quality
+### Features
 
-**Methodology**
+- Fixed Acidity
+- Volatile Acidity
+- Citric Acid
+- Residual Sugar
+- Chlorides
+- Free Sulphur Dioxide
+- Total Sulphur Dioxide
+- Density
+- pH
+- Sulphates
+- Alcohol
+- Quality
 
-**Exploratory Data Analysis**
+---
+
+## Methodology
+
+### Exploratory Data Analysis
 
 The dataset was analysed to identify:
 
-Missing values
-Outliers
-Feature distributions
-Quality class distribution
-Correlations among variables
+- Missing values
+- Outliers
+- Feature distributions
+- Quality class distribution
+- Correlations among variables
 
-**Data Preprocessing**
+### Data Preprocessing
 
 Several preprocessing techniques were applied:
 
-Data cleaning
-Feature scaling
-Data normalisation
-MinMaxScaler
-SMOTE oversampling
-SMOTE was used to address class imbalance and increase dataset representation across wine quality categories.
+- Data cleaning
+- Feature scaling
+- Data normalisation
+- MinMaxScaler
+- SMOTE oversampling
 
-**Feature Selection**
+SMOTE was used to address class imbalance and improve dataset representation across wine quality categories.
+
+### Feature Selection
 
 SelectKBest was applied to identify the most influential variables contributing to quality prediction.
 
-**Regression Models**
+### Regression Models
 
-The following models were evaluated:
+The following regression models were developed and evaluated:
 
-Multiple Linear Regression
-Ridge Regression
-Lasso Regression
-Decision Tree Regression
-XGBoost Regression
+- Multiple Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Decision Tree Regression
+- XGBoost Regression
 
-**Classification Models**
+### Classification Models
 
-The following models were evaluated:
+The following classification algorithms were evaluated:
 
-Logistic Regression
-Support Vector Machine (SVM)
-K-Nearest Neighbour (KNN)
+- Logistic Regression
+- Support Vector Machine (SVM)
+- K-Nearest Neighbour (KNN)
 
-**Key Findings**
+---
 
-**Important Features**
+## Key Findings
+
+### Important Features
 
 Feature importance analysis showed that the most influential quality indicators were:
 
-Volatile Acidity
-Alcohol
-Citric Acid
-Sulphates
+- Volatile Acidity
+- Alcohol
+- Citric Acid
+- Sulphates
 
-**Model Performance**
+### Regression Performance
 
-Model	Performance
-Multiple Regression	R² = 0.74
-Decision Tree	R² = 0.85
-XGBoost	R² = 0.95
+| Model | Performance |
+|---------|------------|
+| Multiple Linear Regression | R² = 0.74 |
+| Decision Tree Regression | R² = 0.85 |
+| XGBoost Regression | R² = 0.95 |
+
 XGBoost achieved the highest predictive performance with an R² score of 95% and the lowest prediction error.
 
-**Classification Results**
+### Classification Performance
 
-Model	Accuracy
-Logistic Regression	60%
-SVM	64%
-KNN	61%
-Support Vector Machine produced the best classification performance.
+| Model | Accuracy |
+|---------|----------|
+| Logistic Regression | 60% |
+| Support Vector Machine (SVM) | 64% |
+| K-Nearest Neighbour (KNN) | 61% |
 
-**Technologies Used**
+Support Vector Machine (SVM) achieved the highest classification accuracy.
 
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
-* XGBoost
-* Matplotlib
-* Seaborn
-* Google Colab
+---
 
-**Skills Demonstrated**
+## Technologies Used
 
-* Machine Learning
-* Regression Analysis
-* Classification Modelling
-* XGBoost
-* Feature Engineering
-* Feature Selection
-* Data Preprocessing
-* SMOTE
-* Exploratory Data Analysis
-* Model Evaluation
-* Statistical Analysis
-* Python
+- Python
+- Pandas
+- NumPy
+- Scikit-Learn
+- XGBoost
+- Matplotlib
+- Seaborn
+- Google Colab
 
-**Project Outcome**
+---
 
-The project demonstrated that machine learning can effectively predict wine quality from physicochemical attributes.
+## Skills Demonstrated
+
+- Machine Learning
+- Regression Analysis
+- Classification Modelling
+- XGBoost
+- Feature Engineering
+- Feature Selection
+- Data Preprocessing
+- SMOTE
+- Exploratory Data Analysis (EDA)
+- Model Evaluation
+- Statistical Analysis
+- Python Programming
+
+---
+
+## Project Outcome
+
+The project demonstrated that machine learning techniques can effectively predict wine quality from physicochemical characteristics.
 
 Among all models tested, XGBoost delivered the strongest predictive performance, while Support Vector Machine achieved the best classification accuracy.
 
-The findings suggest that alcohol concentration, volatile acidity, citric acid, and sulphates are among the most influential wine quality indicators.
+The findings suggest that alcohol concentration, volatile acidity, citric acid, and sulphates are among the most influential indicators of wine quality.
 
-**Repository Contents**
+---
 
-Executive Summary
+## Repository Structure
 
-See: reports/Wine_Quality_Prediction_Executive_Summary.docx
+```text
+wine-quality-prediction
+│
+├── data
+├── images
+├── notebook
+├── reports
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-Notebook
+---
 
-See: notebook/Wine_Quality_task_1_&_2.ipynb
+## Repository Contents
 
-Visualisations
+### Executive Summary
+See `reports/Wine_Quality_Prediction_Executive_Summary.docx`
 
-See: images/
+### Notebook
+See `notebook/Wine_Quality_task_1_&_2.ipynb`
 
-Dataset Information
+### Visualisations
+See `images/`
 
-See: data/
+### Dataset Information
+See `data/`
 
-**Author**
+---
 
-Derek Ahamioje
+## Author
+
+**Derek Ahamioje**
 
 Data Scientist | Research Analytics Specialist | Published Researcher | Computer Science Lecturer
